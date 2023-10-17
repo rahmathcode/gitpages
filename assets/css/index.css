@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  /* color palette  */
+  --primary-color: #fff;
+  --secondary-color: #1b3764;
+  --tertiary-color: #ffca42;
+  --quaternary-color: #f6f8fc;
+  --quinary-color: #b4c7e7;
+
+  /* font color */
+  --primary-font-color: #fff;
+  --secondary-font-color: #969aa0;
+}
+
+/* h classes */
+h1 {
+  color: var(--secondary-color);
+  font-family: "Cardo";
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.2125vw;
+  letter-spacing: -0.06094vw;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-family: "Cardo";
+  font-size: 3.4375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.46875vw;
+  letter-spacing: -0.05156vw;
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-family: "Cardo";
+  font-size: 2.8125vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.65625vw;
+  letter-spacing: -0.04219vw;
+}
+
+h4 {
+  color: var(--secondary-color);
+  font-family: "Cardo";
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.6vw;
+  letter-spacing: -0.03vw;
+}
+
+h5 {
+  color: var(--secondary-color);
+  font-family: "Cardo";
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.95vw;
+  letter-spacing: -0.0225vw;
+}
+
+h6 {
+  color: var(--secondary-color);
+  font-family: "Cardo";
+  font-size: 1.375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.7875vw;
+  letter-spacing: -0.02063vw;
+}
+
+/* paragraph */
+p {
+  color: var(--secondary-font-color);
+  font-family: "Inter";
+  font-size: 1.1875vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 2.01875vw */
+  letter-spacing: -0.01188vw;
+}
+
+/* list */
+li {
+  color: var(--secondary-color);
+  font-family: "Inter";
+  font-size: 1.1875vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.83469vw;
+  letter-spacing: -0.01188vw;
+}
+
+/* common classes */
+.inter-style-1 {
+  color: var(--primary-font-color);
+  font-family: "Inter";
+  font-size: 1.75vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.1875vw; /**/
+}
+
+.inter-style-2 {
+  color: var(--primary-font-color);
+
+  font-family: "Inter";
+
+  font-size: 1.0625vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.32813vw;
+  letter-spacing: -0.01063vw;
+}
+
+/* buttons classes */
+.btn {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "Cardo";
+  font-size: 1.1875vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.48438vw;
+  letter-spacing: 0.02375vw;
+  text-transform: capitalize;
+}
+
+.primary-btn {
+  background: var(--tertiary-color);
+
+  padding: 0.6125vw 2.0625vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625vw;
+  cursor: pointer;
+  border: 2px solid var(--tertiary-color);
+}
+.primary-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--primary-color);
+  border: 2px solid var(--tertiary-color);
+}
+
+.secondary-btn {
+  background: var(--tertiary-color);
+
+  display: flex;
+  padding: 1.25vw 3.5vw 1.3125vw 3.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625vw;
+  cursor: pointer;
+}
+
+.tertinary-btn {
+  background: var(--primary-color);
+
+  display: flex;
+  padding: 1.25vw 3.5vw 1.3125vw 3.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625vw;
+}
+
+.tertiary-color {
+  background: var(--tertiary-color);
+
+  display: flex;
+  padding: 1.25vw 6vw 1.3125vw 6vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625vw;
+}
+
+
+/* media queries */
+@media (min-width: 200px) and (max-width: 700px) {
+  .primary-btn:hover {
+
+    color: var(--secondary-color);
+  }
+}

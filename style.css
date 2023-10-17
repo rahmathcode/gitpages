@@ -1,0 +1,258 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* header section */
+header {
+  height: 6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+.ebook-logo {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+nav {
+  width: 75%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* hamburger-menu & nav items */
+.hamburger-menu,
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+}
+
+.hamburger-btn {
+  color: var(--primary-color);
+  visibility: hidden;
+}
+
+.nav-items div {
+  color: var(--primary-color);
+  font-family: "Inter";
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.32813rem;
+  letter-spacing: -0.01063rem;
+  text-transform: capitalize;
+}
+
+.home {
+  color: var(--tertiary-color);
+}
+
+.nav-items span:hover {
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+/* main section */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hero section */
+.hero-section {
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.hero-container {
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.5rem;
+}
+
+.hero-container h1 {
+  color: var(--primary-color);
+}
+.hero-right-container img {
+  height: 75vh;
+}
+
+/* hero section left */
+.hero-left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero-left-wrapper {
+  display: flex;
+}
+
+.title {
+  color: var(--primary-color);
+  font-family: "Cardo";
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.3175rem; /*  */
+  letter-spacing: -0.03rem;
+  text-transform: capitalize;
+}
+
+.title::before {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 2.125vw;
+  height: 0.0625vh;
+  background-color: var(--tertiary-color);
+  margin-right: 1rem;
+}
+
+.hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.hero-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.read-free-demo {
+  position: relative;
+  color: var(--primary-color);
+  text-align: "center";
+  font-family: "Cardo";
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.48438rem; /* 1.48438rem */
+  letter-spacing: 0.02375rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.read-free-demo::after {
+  content: " ";
+  width: 9.5rem;
+  height: 0.0625vh;
+  display: inline-block;
+
+  position: absolute;
+  top: 1.7rem;
+  left: 0rem;
+  background-color: var(--primary-color);
+}
+
+.hero-details-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.hero-details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.19rem;
+  position: relative;
+}
+
+.hero-details-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.hero-details-wrapper::before {
+  content: " ";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  border: none;
+}
+
+.hero-details-heading h1 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem; /*  */
+  letter-spacing: -0.015rem;
+  text-transform: capitalize;
+}
+
+.hero-details-text {
+  color: var(--quinary-color);
+  font-family: "Inter";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 1.9125rem */
+  letter-spacing: -0.01125rem;
+}
+
+/* about section */
+
+/* media queries */
+
+@media (min-width: 200px) and (max-width: 700px) {
+  /* hamburger menu */
+  .hamburger-menu {
+    position: relative;
+    display: inline-block;
+  }
+  .hamburger-btn {
+    visibility: visible;
+    cursor: pointer;
+  }
+  .hamburger-menu:hover .nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem !important;
+  }
+
+  /* nav items */
+  .nav-items {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 11rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .nav-items div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .nav-items a:active {
+    background-color: #f1f1f1;
+  }
+}
